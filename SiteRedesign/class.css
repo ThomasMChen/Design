@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+.content {
+    text-align: left;
+    font-size: 14px;
+}
+ 
+h5, h6 {
+    text-align: left;
+}
+
+footer {
+    text-align-last: center;
+    font-size: 14px;
+    float: left;
+    clear: left;
+    margin-bottom: 25px;
+}
+
+#subtitle {
+    text-align: center;
+    font-size: 14px;
+}
+
+.left {
+    float: left;
+    margin-bottom: 25px;
+}
+
+.right {
+    float: right;
+    margin-bottom: 25px;
+}
+
+.container {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
