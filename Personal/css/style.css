@@ -1,0 +1,107 @@
+html, body {
+    background-color: #F44336;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 400%;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+nav {
+    width: 100%;
+    background-color: #C62828;
+    padding: 20px;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    padding: 16px;
+}
+
+a {
+    color: #FFFFFF;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #BBDEFB;
+    text-decoration: none;
+}
+
+hr
+{
+    background-color: #E84033;   
+    border: 0 none;
+    color: #E84033;   
+    height: 3px;
+}
+
+
+.center {
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+/*Screen*/
+@media screen and (min-width: 768px){
+
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px){
+    h1 {
+        font-size: 300%;
+    }
+    
+    h2 {
+        font-size: 100%;
+    }
+}
+
+/*Mobile M*/
+@media screen and (max-width: 414px){
+    h1 {
+        font-size: 150%;
+    }
+    
+    h2 {
+        font-size: 75%;
+    }
+    
+    li {
+        padding: 8px;
+    }
+}
+
+/*Mobile S*/
+@media screen and (max-width: 413px){
+li {
+    display: block;
+    padding: 8px;
+}
