@@ -1,70 +1,51 @@
 html, body {
-    text-align: center;
-    color: #FFFFFF;
-    margin: 0;
-    height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-}
-
-h1 {
-    font-size: 400%;
-}
-
-h2 {
-    font-size: 150%;
-}
-
-nav {
     width: 100%;
-    background-color: #C62828;
-    padding: 20px;
-    text-align: center;
-}
-
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li {
-    display: inline;
-    padding: 16px;
-}
-
-a {
+    height: 100%;
     color: #FFFFFF;
-    font-weight: 300;
-    letter-spacing: 1px;
-    padding: 16px;
-    text-decoration: none;
 }
 
-a:hover {
-    color: #BBDEFB;
-    text-decoration: none;
+.hero {
+  background: url(/src/tulips.png) no-repeat center center;
+  background-size: cover;
+  height:75vh; 
+  width: 100%;
+  position: relative;
 }
 
-hr
-{
-    background-color: #E84033;   
-    border: 0 none;
-    color: #E84033;   
-    height: 3px;
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;}
+
+.content {
+  height:75vh; 
+  width: 100%;
 }
 
+.left-model {
+    height: 150%;
+    margin-top: -12.5%;
+    margin-left: 5%;
+}
 
-.center {
-    padding: 5px;
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+#title {
+    color: #FFFFFF;
+    font-size: 5em;
+    font-weight: 200;
+}
+
+#badge {
+  height:75vh; 
+  width: 100%;
+  background-color: RGBA(125, 58, 115, .4); 
+  padding-top: 5vh; 
+  padding-bottom: 10vh;
+  padding-right: 5vh;
+  padding-left: 5vh;
 }
 
 /*Screen*/
@@ -74,33 +55,14 @@ hr
 
 /*Tablet*/
 @media screen and (max-width: 768px){
-    h1 {
-        font-size: 300%;
-    }
-    
-    h2 {
-        font-size: 100%;
-    }
+
 }
 
 /*Mobile M*/
 @media screen and (max-width: 414px){
-    h1 {
-        font-size: 150%;
-    }
-    
-    h2 {
-        font-size: 75%;
-    }
-    
-    li {
-        padding: 8px;
-    }
+
 }
 
 /*Mobile S*/
 @media screen and (max-width: 413px){
-li {
-    display: block;
-    padding: 8px;
 }
