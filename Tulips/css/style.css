@@ -6,6 +6,25 @@ html, body {
     color: #FFFFFF;
 }
 
+h2 {
+    color: #FFFFFF;
+    font-size: 2.5em;
+    font-weight: 200;
+}
+
+a {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.fa:hover {
+    color: RGBA(210, 47, 114, .60);
+    -webkit-transition: color ease-out 1s;
+    -moz-transition: color ease-out 1s;
+    -o-transition: color ease-out 1s;
+    transition: color ease-out 1s;
+}
+
 .hero {
   background: url(/src/tulips.png) no-repeat center center;
   background-size: cover;
@@ -26,6 +45,12 @@ html, body {
   width: 100%;
 }
 
+.content-inverse {
+  height:75vh; 
+  width: 100%;
+  background-color: RGBA(125, 58, 115, .4); 
+}
+
 .left-model {
     height: 150%;
     margin-top: -12.5%;
@@ -39,10 +64,10 @@ html, body {
 }
 
 #badge {
-  height:75vh; 
+  height:60vh; 
   width: 100%;
   background-color: RGBA(125, 58, 115, .4); 
-  padding-top: 5vh; 
+  padding-top: 10vh; 
   padding-bottom: 10vh;
   padding-right: 5vh;
   padding-left: 5vh;
