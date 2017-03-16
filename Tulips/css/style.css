@@ -48,13 +48,21 @@ a {
 .content-inverse {
   height:75vh; 
   width: 100%;
-  background-color: RGBA(125, 58, 115, .4); 
+  background-color: RGBA(125, 58, 115, .1); 
 }
 
 .left-model {
-    height: 150%;
-    margin-top: -12.5%;
-    margin-left: 5%;
+    height: 125%;
+    margin-top: -5%;
+    margin-left: 10%;
+    float: left;
+}
+
+.right-model {
+    height: 125%;
+    margin-top: -5%;
+    float: right;
+    margin-right: 10%;
 }
 
 #title {
@@ -66,7 +74,7 @@ a {
 #badge {
   height:60vh; 
   width: 100%;
-  background-color: RGBA(125, 58, 115, .4); 
+  background-color: RGBA(125, 58, 115, .3); 
   padding-top: 10vh; 
   padding-bottom: 10vh;
   padding-right: 5vh;
