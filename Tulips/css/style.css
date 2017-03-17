@@ -81,6 +81,12 @@ a {
   padding-left: 5vh;
 }
 
+#footer {
+    background-color: RGBA(231, 231, 231, 1.00);
+    color: RGBA(0,0,0,.5);
+    padding: 5%;
+    margin-top: 10%;
+}
 /*Screen*/
 @media screen and (min-width: 768px){
 
