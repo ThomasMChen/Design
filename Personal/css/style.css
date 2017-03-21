@@ -33,11 +33,15 @@ body {
 }
 
 h1 {
-    font-size: 400%;
+    font-size: 4em;
 }
 
 h2 {
-    font-size: 150%;
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.5em;
 }
 
 nav {
@@ -47,17 +51,35 @@ nav {
     text-align: center;
 }
 
-ul{
+#links{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
+#links li {
     display: inline;
     padding: 16px;
 }
+
+#engagements {
+   list-style: none;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    
+}
+
+#position {
+    list-style: none;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin-left: 20px;
+}
+
+
 
 a {
     color: #FFFFFF;
@@ -74,9 +96,10 @@ a:hover {
 
 hr
 {
+    background: RGBA(200, 200, 200, .250);
     border: 0 none;
     color: #E84033;   
-    height: 3px;
+    height: 2px;
 }
 
 
@@ -90,6 +113,42 @@ hr
     transform: translate(-50%, -50%);
     width: 100%;
 }
+
+#profilepic {
+    border-radius: 50%;
+    width: 250px;
+    margin: 10px;
+    
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-moz-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#wrapper {
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
+#profile {
+    display: inline-block;
+    margin: 0px;
+}
+
+#content {
+    display: inline-block;
+    width: auto;
+    margin-left: 15px;
+    text-align: left;
+    
+    -webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-moz-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+@-webkit-keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
 
 /*Screen*/
 @media screen and (min-width: 768px){
@@ -124,7 +183,16 @@ hr
 
 /*Mobile S*/
 @media screen and (max-width: 413px){
-li {
-    display: block;
-    padding: 8px;
+    h2 {
+        font-size: 100%;
+    }
+
+    li {
+        display: block;
+        padding: 8px;
+    }
+
+    #position {
+        display: none;
+    }
 }
