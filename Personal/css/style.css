@@ -1,11 +1,35 @@
 html, body {
-    background-color: #F44336;
+
     text-align: center;
     color: #FFFFFF;
     margin: 0;
     height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
+}
+
+body {
+    background: linear-gradient(270deg, #f44336, #00bcd4);
+    background-size: 400% 400%;
+    -webkit-animation: gradientshift 20s ease infinite;
+    -moz-animation: gradientshift 20s ease infinite;
+    animation: gradientshift 20s ease infinite;
+}
+
+@-webkit-keyframes gradientshift {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientshift {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradientshift { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 h1 {
@@ -50,7 +74,6 @@ a:hover {
 
 hr
 {
-    background-color: #E84033;   
     border: 0 none;
     color: #E84033;   
     height: 3px;
