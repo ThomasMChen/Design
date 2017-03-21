@@ -1,3 +1,14 @@
+/*
+Theme Name: Thomas Chen Personal Website
+Description: Landing Page for Personal Site
+Author: Thomas Chen
+Author URI: thomaschen.org
+*/
+
+/* ------------------------------------------------------------------ */
+/* Elements
+/* ------------------------------------------------------------------ */
+
 html, body {
 
     text-align: center;
@@ -79,6 +90,10 @@ footer p {
     cursor: pointer;
 }
 
+/* ------------------------------------------------------------------ */
+/* Classes & IDs
+/* ------------------------------------------------------------------ */
+
 .center {
     padding: 5px;
     display: block;
@@ -153,6 +168,11 @@ footer p {
     padding: 0px;
 }
 
+/* ------------------------------------------------------------------ */
+/* Animations
+/* ------------------------------------------------------------------ */
+
+/* Background Color Gradient */
 @-webkit-keyframes gradientshift {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
@@ -168,12 +188,20 @@ footer p {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-    
+
+/* Shift Left In*/
 @-webkit-keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
 
+/* Shift Right In*/
 @-webkit-keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
 
+/* Pulsing*/
 @-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+
+
+/* ------------------------------------------------------------------ */
+/* Responsiveness
+/* ------------------------------------------------------------------ */
 
 /*Screen*/
 @media screen and (min-width: 768px){
