@@ -15,8 +15,9 @@ html, body {
     color: #FFFFFF;
     margin: 0;
     height: 100%;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
+    font-weight: lighter;  
 }
 
 body {
@@ -69,13 +70,11 @@ hr
 }
 
 footer {
-    position:fixed;
-    bottom:0;
-    text-align: center;
-    display: inline-block;
     font-size: .75em;
     margin-bottom: 10px;
+    top: 100%;
     display: none;
+    
 }
 
 footer i {
@@ -119,6 +118,7 @@ footer p {
     width: 100%;
     overflow: auto;
     text-align: center;
+    overflow-x: hidden;
 }
 
 #profile {
@@ -131,6 +131,7 @@ footer p {
     width: auto;
     margin-left: 15px;
     text-align: left;
+    overflow-x: hidden;
     
     -webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	-moz-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -221,17 +222,17 @@ footer p {
 }
 
 /*Mobile M*/
-@media screen and (max-width: 480px){
+@media screen and (max-width: 767px){
     h1 {
-        font-size: 150%;
+        font-size: 250%;
     }
     
     h2 {
-        font-size: 75%;
+        font-size: 100%;
     }
     
     #profilepic {
-        margin: 25px 10px 0px 10px;
+        margin: 25px 10px 25px 10px;
     }
 }
 
