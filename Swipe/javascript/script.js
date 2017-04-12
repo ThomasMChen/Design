@@ -5,4 +5,3 @@ Author: Thomas Chen
 Author URI: https://www.thomaschen.org/
 Tags: Swipe, Alpha
 */
-
