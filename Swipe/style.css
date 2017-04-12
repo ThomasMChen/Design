@@ -330,3 +330,6 @@ h2 {
     letter-spacing: 4px;
     font-weight: 200;
 }
+.fa-expand {
+    display: none;
+}
