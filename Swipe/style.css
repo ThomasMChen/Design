@@ -79,7 +79,7 @@ td {
 }
 
 h1 {
-    font-size: 36pt;
+    font-size: 50pt;
     letter-spacing: 6px;
     padding: 10px;
     font-weight: 400;
@@ -90,6 +90,10 @@ h2 {
     letter-spacing: 2px;
     padding: 20px 0px 10px 0px;
     font-weight: 400;
+}
+
+.container p {
+    font-size: 14pt;
 }
 
 /* ------------------------------------------------------------------ */
@@ -316,6 +320,10 @@ h2 {
   transform: translate3d(0,0,0);
 }
 
+.fa-expand {
+    display: none;
+}
+
 /* ------------------------------------------------------------------ */
 /* IDs
 /* ------------------------------------------------------------------ */
@@ -330,6 +338,11 @@ h2 {
     letter-spacing: 4px;
     font-weight: 200;
 }
-.fa-expand {
-    display: none;
+
+#title {
+    -webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	-moz-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
