@@ -5,7 +5,7 @@
     <!--- Basic Page Requirements
     ================================================== -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Skype-Docs</title>
+    <title>SWIPE</title>
     <meta name="description" content="Skype-Docs">
     <meta name="author" content="Skype-Docs Team">
     
@@ -23,6 +23,7 @@
     
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
     
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="stylesheets/introduction.css">
@@ -39,11 +40,63 @@
                 </div>
             </div>
             <div id="navRight">
+                <button id="changelog" >Changelog</button>
+                <a href="index.html"><button class="openButton" id="backBtn">Back</button></a>
+
             </div>
     </header>
     
     <!-- Primary Content
-    ================================================== -->
+    ================================================== --> 
+
+    <!-- Modal -->
+    <div class="modal fade" id="changelogModal" tabindex="-1" role="dialog" aria-labelledby="changelogModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="changelogModalLabel">Changelog</h5>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="changeBody">
+                    <h6>v0.3 [4-16-2016] Finalized UI Design
+                        <a href="http://thomaschen.org/demo/swipe/0.3/">Snapshot</a>
+                    </h6>
+                    <hr>
+                    <ul>
+                        <li>Executed final round of design usability tests</li>
+                        <li>Reduced card image preview brightness from 0.85 to 0.50</li>
+                        <li>Increased title accent and added title animation</li>
+                        <li>Finalized user interface design for current iteration</li>
+                    </ul>
+                    <h6>v0.2 [4-12-2016] UI Overhaul 
+                        <a href="http://thomaschen.org/demo/swipe/0.2/">Snapshot</a>
+                    </h6>
+                    <hr>
+                    <ul>
+                        <li>Executed first, second, third rounds of design usability tests</li>
+                        <li>Refined usability test procedure</li>
+                        <li>Implemented more intuitive expansion functionality</li>
+                        <li>Removed redundant expand button</li>
+                        <li>Updated page routing for a less intrusive experience</li>
+                    </ul>
+                    <h6>v0.1 [2-9-2017] Alpha Version - Initial Design Prototype                     
+                        <a href="http://thomaschen.org/demo/swipe/0.1/">Snapshot</a>
+                    </h6>
+                    <hr>
+                    <ul>
+                        <li>Established users and tasks</li>
+                        <li>Executed environmental scan</li>
+                        <li>Built out initial design prototype</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
     <div id="primary">
         <h1 id="title">S W I P E</h1>
         <p id="subline">
@@ -52,10 +105,12 @@
 
         <br>
             <div id="mainHero">
-                <img src="images/Desktop.png" alt="Desktop" id="desktop">
-                <img src="images/Tablet.png" alt="Desktop" id="tablet">
-                <img src="images/Mobile.png" alt="Desktop" id="mobile">
+                <img src="images/Desktop-view.svg" alt="Desktop" id="desktop" width="570px">
+                <img src="images/Tablet-view.svg" alt="Desktop" id="tablet" width="216px">
+                <img src="images/Mobile-view.svg" alt="Desktop" id="mobile" width="72px">
             </div>
+        
+        <br>
     
         <div id="footerCTA">
             <button id="viewMoreButton">VIEW DETAILS <i class="fa fa-chevron-up"></i></button>
@@ -105,7 +160,7 @@
                 <tr>
                     <td class="label">Applicable to a Wide Use Cases</td>
                     <td class="label-primary"><i class="fa fa-check" aria-hidden="true"></i></td>
-                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td></td>
                     <td><i class="fa fa-check" aria-hidden="true"></i></td>
                     <td></td>
                 </tr>
@@ -115,7 +170,7 @@
                     <td class="label-primary"><i class="fa fa-check" aria-hidden="true"></i></td>
                     <td></td>
                     <td></td>
-                    <td><i class="fa fa-check" aria-hidden="true"></td>
+                    <td></td>
                 </tr>
                 
                 <tr>
@@ -143,10 +198,10 @@
                 </tr>
                 
                 <tr>
-                    <td class="label">Version History</td>
+                    <td class="label">Persistent Version History</td>
                     <td class="label-primary"><i class="fa fa-check" aria-hidden="true"></i></td>
                     <td></td>
-                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td></td>
                     <td></td>
                 </tr>
                 
@@ -154,7 +209,7 @@
                     <td class="label">Offline Access</td>
                     <td class="label-primary"><i class="fa fa-check" aria-hidden="true"></i></td>
                     <td></td>
-                    <td></td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
                     <td></td>
                 </tr>
                 
@@ -175,6 +230,11 @@
     ================================================== -->
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    
+    <!-- BootStrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     
     <!-- Local -->
     <script src="javascript/script.js"></script>

@@ -1,9 +1,9 @@
 /*
-Theme Name: Skype-Docs Landing Page
-Description: Landing page for Skype-Docs Web app
-Author: Skype-Docs Team
+Theme Name: Swipe Landing Page
+Description: Landing page for Swipe Web app
+Author: Swipe Team
 Author URI: 
-Tags: Skype-Docs
+Tags: Swipe
 */
 
 /* ------------------------------------------------------------------ */
@@ -12,16 +12,6 @@ Tags: Skype-Docs
 * {
 	margin: 0;
 	padding: 0;
-}
-
-/* ------------------------------------------------------------------ */
-/* Responsive
-/* ------------------------------------------------------------------ */
-/*Phone*/
-@media screen and (max-width: 767px){
-    .icon {
-        visibility: hidden;
-    }
 }
 
 /* ------------------------------------------------------------------ */
@@ -86,6 +76,11 @@ tr {
 tr:hover {
     background-color: #f5f5f5
 }
+
+button:focus {
+    outline:0;
+}
+
 
 /* ------------------------------------------------------------------ */
 /* Classes
@@ -269,21 +264,21 @@ tr:hover {
     margin-top: 3px;
 }
 
-#openButton {
+.openButton {
     background: transparent;
     color: #FFFFFF;
     font-size: 8pt;
     font-weight: 100;
     border:solid 1px #FFFFFF;
-    border-radius: 14px;
+    border-radius: 7px;
     padding: 2px 10px 2px 10px;
     max-height: 30px;
     margin-top: 18px;
 }
 
-#openButton:hover {
+.openButton:hover {
     background: #FFFFFF;
-    color: #F34A4A;
+    color: #C2185B;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -300,7 +295,7 @@ tr:hover {
     height: 50px;
     color: #253039;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.0);
+    background: rgba(0, 0, 0, 0);
     border: transparent;
     font-weight: 100;
     font-size: 12pt;
@@ -409,6 +404,69 @@ tr:hover {
 	animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .38s both;
 }
 
+/* ------------------------------------------------------------------ */
+/* Changelog
+/* ------------------------------------------------------------------ */
+
+#changelog {
+    color: #253039;
+    background: transparent;
+    font-size: 8pt;
+    font-weight: 100;
+    border:solid 1px #253039;
+    border-radius: 7px;
+    padding: 2px 10px 2px 10px;
+    max-height: 30px;
+    margin-top: 18px;
+}
+
+
+#changelog:hover {
+    background: #253039;
+    color: #FFFFFF;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    cursor: pointer;
+}
+
+#changelogModal {
+    color: #253039;
+}
+
+#changeBody {
+    text-align: left;
+}
+
+
+#changeBody ul {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+#changeBody a {
+    float: right;
+    width: 10%;
+    color: #3B5998;
+    cursor: pointer;
+    font-size: 10px;
+    
+}
+
+#changeBody a:hover{
+    text-decoration: underline;
+}
+
+#changeBody hr{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#changeBody h6 {
+    margin-bottom: 0px;
+}
 
 
 /* ------------------------------------------------------------------ */
@@ -436,3 +494,48 @@ tr:hover {
 @-webkit-keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
 @-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
 
+/* ------------------------------------------------------------------ */
+/* Responsive
+/* ------------------------------------------------------------------ */
+/*Phone*/
+@media screen and (max-width: 767px){
+#viewMoreButton {
+        display: block;
+        width: 100%;
+        position: absolute;
+        margin: 0 auto;
+        height: 50px;
+        color: #FFFFFF;
+        bottom: 0;
+        background: RGBA(233, 30, 99, .80);
+        border: transparent;
+        font-weight: 100;
+        font-size: 12pt;
+        letter-spacing: 1px;
+
+        -webkit-animation: heartbeat 0s ease-in-out 0s infinite both;
+        -moz-animation: heartbeat 0s ease-in-out 0s infinite both;
+        animation: heartbeat 0s ease-in-out 0s infinite both;
+    }
+    
+    #viewMoreButton:hover {
+        cursor: pointer;
+    }
+    
+    #ctaButton-secondary {
+        width: 50%;
+        text-align: center;
+        padding: 10px 24px;
+        color: #FFFFFF;
+        border: transparent;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin: 20px 0px 10px 0px;
+        border-radius: 4px;
+        box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    h2 {
+        margin-top: 10px;
+    }
+}

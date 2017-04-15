@@ -6,7 +6,7 @@ Author URI:
 Tags: Skype-Docs
 */
 $(document).ready(function () {
-
+    $("#backBtn").hide();
 });
 
 
@@ -16,6 +16,17 @@ $( "#viewMoreButton" ).click(function() {
   $("#primary").slideUp('1000');
   $("#logo").addClass("invert");
   $(".header").addClass("gradientBackground");
+  $("#changelog").hide();
+  $("#backBtn").show();
+
+});
+
+$( "#backBtn" ).click(function() {
+  $("#backBtn").hide();
+});
+
+$( "#changelog" ).click(function() {
+    $('#changelogModal').modal('show');
 });
 
 
