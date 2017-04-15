@@ -9,8 +9,13 @@ $(document).ready(function () {
     $("#backBtn").hide();
 });
 
+var current = $(window).scrollTop();
+$(window).scroll(function() {
+    $(window).scrollTop(current);
+});
 
 $( "#viewMoreButton" ).click(function() {
+  $(window).off('scroll');
   $("#viewMoreButton").hide();
   $("#secondary").slideDown('10');
   $("#primary").slideUp('1000');

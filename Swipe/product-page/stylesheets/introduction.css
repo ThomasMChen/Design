@@ -365,6 +365,7 @@ button:focus {
     border-bottom: 4px solid #C2185B;
     box-shadow: 5px 0px 0px 0px #ddd;
 }
+
 #footerCTA {
     position: fixed;
     margin-top: 10px;
@@ -567,4 +568,14 @@ button:focus {
         margin-left: -85px;
         margin-top: 160px; 
     }
+
 }
+
+.openButton {
+    font-weight: 400;
+}
+
+#changelog {
+    font-weight: 400;
+}
+
