@@ -14,8 +14,8 @@ $( "#viewMoreButton" ).click(function() {
   $("#viewMoreButton").hide();
   $("#secondary").slideDown('10');
   $("#primary").slideUp('1000');
+  $("#logo").addClass("invert");
   $(".header").addClass("gradientBackground");
-  $("#logo").addClass(".invert");
 });
 
 

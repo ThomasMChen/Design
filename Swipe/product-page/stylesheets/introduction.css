@@ -162,8 +162,8 @@ tr:hover {
 }
 
 .invert {
-    -webkit-filter: invert(1);
-    filter: invert(1);
+    -webkit-filter: invert(.9);
+    filter: invert(.9);
 }
 
 /* ------------------------------------------------------------------ */
@@ -254,8 +254,8 @@ tr:hover {
 
 #logo {
     float: left;
-    max-height: 60px;
-    margin-top: -14px;
+    max-height: 40px;
+    margin-top: -5px;
     padding: 0px;
 }
 
@@ -404,9 +404,9 @@ tr:hover {
     margin-top: 290px;
     z-index: 3;
  
-    -webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .4s both;
-	-moz-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .4s both;
-	animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .4s both;
+    -webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .38s both;
+	-moz-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 38s both;
+	animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .38s both;
 }
 
 
