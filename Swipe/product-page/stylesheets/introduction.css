@@ -22,6 +22,7 @@ body {
     color: #253039;
     text-align: center;
     background: #E3E4E5;
+    height: auto;
     /*
     background: linear-gradient(270deg, #EF5350, #C2185B);
     
@@ -288,9 +289,12 @@ button:focus {
 }
 
 #viewMoreButton {
-    display: block;
+    z-index: 4;
+    display: table;
     width: 100%;
     position: absolute;
+    bottom: 0px;
+    
     margin: 0 auto;
     height: 50px;
     color: #253039;
@@ -301,9 +305,14 @@ button:focus {
     font-size: 12pt;
     letter-spacing: 1px;
     
+    /*
     -webkit-animation: heartbeat 2.5s ease-in-out 3s infinite both;
 	-moz-animation: heartbeat 2.5s ease-in-out 3s infinite both;
 	animation: heartbeat 2.5s ease-in-out 3s infinite both;
+    */
+    
+    background: RGBA(233, 30, 99, .90);
+    color: #FFFFFF;
 
 
 }
@@ -500,22 +509,25 @@ button:focus {
 /*Phone*/
 @media screen and (max-width: 767px){
 #viewMoreButton {
-        display: block;
-        width: 100%;
-        position: absolute;
-        margin: 0 auto;
-        height: 50px;
-        color: #FFFFFF;
-        bottom: 0;
-        background: RGBA(233, 30, 99, .80);
-        border: transparent;
-        font-weight: 100;
-        font-size: 12pt;
-        letter-spacing: 1px;
+    z-index: 4;
 
-        -webkit-animation: heartbeat 0s ease-in-out 0s infinite both;
-        -moz-animation: heartbeat 0s ease-in-out 0s infinite both;
-        animation: heartbeat 0s ease-in-out 0s infinite both;
+    display: table;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+
+    height: 50px;
+    color: #FFFFFF;
+    bottom: 0;
+    background: RGBA(233, 30, 99, .80);
+    border: transparent;
+    font-weight: 100;
+    font-size: 12pt;
+    letter-spacing: 1px;
+
+    -webkit-animation: heartbeat 0s ease-in-out 0s infinite both;
+    -moz-animation: heartbeat 0s ease-in-out 0s infinite both;
+    animation: heartbeat 0s ease-in-out 0s infinite both;
     }
     
     #viewMoreButton:hover {
@@ -537,5 +549,22 @@ button:focus {
     
     h2 {
         margin-top: 10px;
+    }
+    
+    #desktop {
+        display: none;
+    }
+
+    #tablet {
+        position: absolute;
+        left: 50%;
+        margin-left: -108px;
+        margin-top: 0px;
+        z-index: 1;
+    }
+    
+    #mobile {
+        margin-left: -85px;
+        margin-top: 160px; 
     }
 }
