@@ -162,6 +162,30 @@ button:focus {
     filter: invert(.9);
 }
 
+.openButton {
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 8pt;
+    font-weight: 100;
+    border:solid 1px #FFFFFF;
+    border-radius: 7px;
+    padding: 2px 10px 2px 10px;
+    max-height: 30px;
+    margin-top: 18px;
+}
+
+.openButton:hover {
+    background: #FFFFFF;
+    color: #C2185B;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    cursor: pointer;
+}
+
+
 /* ------------------------------------------------------------------ */
 /* IDs
 /* ------------------------------------------------------------------ */
@@ -263,29 +287,6 @@ button:focus {
     letter-spacing: 2px;
     margin-left: 10px;
     margin-top: 3px;
-}
-
-.openButton {
-    background: transparent;
-    color: #FFFFFF;
-    font-size: 8pt;
-    font-weight: 100;
-    border:solid 1px #FFFFFF;
-    border-radius: 7px;
-    padding: 2px 10px 2px 10px;
-    max-height: 30px;
-    margin-top: 18px;
-}
-
-.openButton:hover {
-    background: #FFFFFF;
-    color: #C2185B;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
-    cursor: pointer;
 }
 
 #viewMoreButton {
@@ -569,13 +570,11 @@ button:focus {
         margin-top: 160px; 
     }
 
-}
+    .openButton {
+        font-weight: 400;
+    }
 
-.openButton {
-    font-weight: 400;
-}
-
-#changelog {
-    font-weight: 400;
-}
+    #changelog {
+        font-weight: 400;
+    }
 
