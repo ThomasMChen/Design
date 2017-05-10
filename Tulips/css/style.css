@@ -26,8 +26,11 @@ a {
 }
 
 .hero {
-  background: url(/src/tulips.png) no-repeat center center;
   background-size: cover;
+  background: -webkit-linear-gradient(-90deg, rgba(255, 110, 127, .5), rgba(191, 233, 255, .5)), url(/src/hero.png) no-repeat center center; /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, rgba(255, 110, 127, .5), rgba(191, 233, 255, .5)), url(/src/hero.png) no-repeat center center; /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, rgba(255, 110, 127, .5), rgba(191, 233, 255, .5)), url(/src/hero.png) no-repeat center center; /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, rgba(255, 110, 127, .5), rgba(191, 233, 255, .5)), url(/src/hero.png) no-repeat center center; /* Standard syntax */
   height:75vh; 
   width: 100%;
   position: relative;
