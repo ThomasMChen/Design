@@ -46,26 +46,28 @@ a {
 .content {
   height:75vh; 
   width: 100%;
+  padding: 2%;
 }
 
 .content-inverse {
   height:75vh; 
   width: 100%;
   background-color: RGBA(125, 58, 115, .1); 
+  padding: 2%;
 }
 
 .left-model {
-    height: 125%;
-    margin-top: -5%;
+    height: 100%;
     margin-left: 10%;
     float: left;
+    display: inline-block;
 }
 
 .right-model {
-    height: 125%;
-    margin-top: -5%;
+    height: 100%;
     float: right;
     margin-right: 10%;
+    display: inline-block;
 }
 
 #title {
@@ -75,7 +77,6 @@ a {
 }
 
 #badge {
-  height:60vh; 
   width: 100%;
   background-color: RGBA(125, 58, 115, .3); 
   padding-top: 10vh; 
@@ -88,7 +89,6 @@ a {
     background-color: RGBA(231, 231, 231, 1.00);
     color: RGBA(0,0,0,.5);
     padding: 5%;
-    margin-top: 10%;
 }
 /*Screen*/
 @media screen and (min-width: 768px){
@@ -107,4 +107,28 @@ a {
 
 /*Mobile S*/
 @media screen and (max-width: 413px){
+}
+
+
+.contentText {
+    display: inline-block;
+    float: right;
+    height: 75vh;
+    width: 60%;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: -2%;
+}
+
+.descTitle {
+    color: black;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.vertCenter {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
